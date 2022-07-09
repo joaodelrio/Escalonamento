@@ -1,7 +1,6 @@
 # Escalonamento de Matrizes
 
-	O escalonamento de matrizes é um procedimento algébrico que podemos utilizar para resolver sistemas lineares onde o número de equações não é, necessariamente, igual ao número de incógnitas.
-Resolver um sistema linear significa encontrar os valores das incógnitas que satisfazem todas as equações simultaneamente.
+  O escalonamento de matrizes é um procedimento algébrico que podemos utilizar para resolver sistemas lineares onde o número de equações não é, necessariamente, igual ao número de incógnitas. Resolver um sistema linear significa encontrar os valores das incógnitas que satisfazem todas as equações simultaneamente.
 
 ## Como utilizar
 
