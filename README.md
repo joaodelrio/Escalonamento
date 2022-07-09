@@ -104,6 +104,4 @@ Essa função é útil para a automatização do processo de interpolação line
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
 * **João Bernardo Del Rio** - *Desenvolvedor* - [JheyBi](https://github.com/JheyBi)
