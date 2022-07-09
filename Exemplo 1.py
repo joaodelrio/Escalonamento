@@ -46,6 +46,7 @@ def F_ZERO(matriz, coluna, tamanho):
       matriz[[i]] = matriz[[i]] + matriz[[coluna]]*(matriz[[i],[coluna]]*-1)
       i=i+1
 
+#Junção das duas funções para o escalonamento completo
 def escalonamento(matriz, tamanho):
   coluna=0
   
