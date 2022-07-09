@@ -28,6 +28,8 @@ D
 
 Existem duas formas para utilizar a função:
 
+#### Primeira forma
+
 A primeira forma é alterando uma coluna de cada vez, para isso você irá primeiro transformar em 1 a diagonal principal da sua coluna, chamando a função "F_UM": 
 
 ```
@@ -51,6 +53,9 @@ def F_ZERO(matriz, coluna, tamanho):
 F_ZERO(matriz, coluna, tamanho)
 ```
 E repita esse processo até terminar.
+
+
+#### Segunda forma
 
 E a segunda forma seria utilizando as duas funções juntas, em uma só:
 
@@ -76,9 +81,13 @@ escalonamento(matriz, tamanho)
 
 ## ⚙️ Exemplos para teste
 
-### 1 Exemplo: Projete um método para aproximar sen x por um polinômio cúbico no intervalo 0 ≤ x ≤ π/2.
+### 1 Exemplo: 
 
-### 2 Exemplo: A força de sustentação da asa de um projeto de aeronave é medida em várias velocidades, como segue:
+Projete um método para aproximar sen x por um polinômio cúbico no intervalo 0 ≤ x ≤ π/2.
+
+### 2 Exemplo: 
+
+A força de sustentação da asa de um projeto de aeronave é medida em várias velocidades, como segue:
 
 Velocidade (30m/s)	         1	  2	       4	     8	     16	     32
 Força de sustentação 50 kgf	0	  3,12	  15,86	  33,7	   81,5	   123,0
