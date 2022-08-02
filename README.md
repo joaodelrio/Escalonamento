@@ -1,4 +1,4 @@
-# Escalonamento de Matrizes
+# Escalonamento de Matrizes Quadradas
 
   O escalonamento de matrizes é um procedimento algébrico que podemos utilizar para resolver sistemas lineares onde o número de equações não é, necessariamente, igual ao número de incógnitas. Resolver um sistema linear significa encontrar os valores das incógnitas que satisfazem todas as equações simultaneamente.
 
@@ -93,6 +93,68 @@ Velocidade (30m/s)	         1	  2	       4	     8	     16	     32
 Força de sustentação 50 kgf	0	  3,12	  15,86	  33,7	   81,5	   123,0
 	        
 Encontre um polinômio interpolador de grau 5 que modela os dados e use seu polinômio para estimar a força de sustentação a 600 m/s.
+
+# Escalonamento de Matrizes MxN
+
+  O escalonamento de matrizes é um procedimento algébrico que podemos utilizar para resolver sistemas lineares onde o número de equações não é, necessariamente, igual ao número de incógnitas. Resolver um sistema linear significa encontrar os valores das incógnitas que satisfazem todas as equações simultaneamente.
+
+## Como utilizar
+
+
+
+### 📋 Pré-requisitos
+
+Para utilizar a função de escalonamento, é necessário que seja importado as bibliotecas numpy e numpy.linalg
+
+```
+import numpy as np
+```
+
+### 🔧 Aplicação
+
+```
+def escalonamento(matriz, m, n):
+  coluna=0
+  #Auxiliar para achar o pivo
+  pivo=0
+  
+  while(coluna<n):
+    if (matriz[[pivo],[coluna]]!=0):
+      matriz[[pivo]] = matriz[[pivo]]*(1/(matriz[[pivo],[coluna]]))
+      i=0
+      while(i<m):
+        if (i==pivo):
+          i=i+1
+        else:
+          matriz[[i]] = matriz[[i]] + matriz[[pivo]]*(matriz[[i],[coluna]]*-1)
+          i=i+1
+      print(f"Coluna {coluna} alterada")
+      print(f"{matriz}")
+      pivo=pivo+1
+      coluna=coluna+1
+    else:
+      print(f"Coluna {coluna} pulada")
+      coluna=coluna+1
+
+escalonamento(matriz, m, n)
+```
+
+## ⚙️ Exemplos para teste
+
+### 3 Exemplo: 
+
+Considere o sistema linear homogêneo:
+
+ 	(x1)+3(x2)-2(x3)+2(x5)=0
+ 
+ 	(x1)+6(x2)-5(x3)-2(x4)+4(x5)-3(x6)=0
+ 
+ 	5(x3)+10(x4)+15(x6)=0
+ 
+ 	2(x1)+6(x2)+8(x4)+4(x5)+18(x6)=0
+
+
+
 
 ## 📦 Desenvolvimento
 
