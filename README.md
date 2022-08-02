@@ -158,7 +158,7 @@ Considere o sistema linear homogêneo:
 
 ## 📦 Desenvolvimento
 
-Essa função é útil para a automatização do processo de interpolação linear
+Essa função é útil na utilização de conteúdos da matéria de Algébra Linear
 
 ## 🛠️ Construído com
 
