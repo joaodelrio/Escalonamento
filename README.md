@@ -118,7 +118,7 @@ def escalonamento(matriz, m, n):
   #Auxiliar para achar o pivo
   pivo=0
   
-  while(coluna<n):
+  while(coluna<n and coluna<m):
     if (matriz[[pivo],[coluna]]!=0):
       matriz[[pivo]] = matriz[[pivo]]*(1/(matriz[[pivo],[coluna]]))
       i=0
